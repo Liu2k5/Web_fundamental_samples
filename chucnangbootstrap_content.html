@@ -1,0 +1,1217 @@
+<div class="container-fluid">
+    <div>
+        <p>
+            *Trang này sử dụng căn chỉnh từ Bootstrap cho nên một số cài đặt font chữ hay cài đặt căn chỉnh khoảng cách
+            bị thay đổi.
+        </p>
+    </div>
+    <div>
+        <h1>Cách dùng</h1>
+    </div>
+    <div class="lightgreyclass">
+        <p>
+            Để sử dụng các chức năng trong Bootstrap: <br>
+            - Đối với thuộc tính trong tên class: ta cần đặt tên lớp (class) chứa các từ khóa nhất định
+            đã được Bootstrap xác định để áp dụng chức năng.
+            <br>
+            Ví dụ: <span class="highlight">&lt;div class="container"&gt; &lt;/div&gt;</span>
+            <br>
+            - Đối với thuộc tính được cung cấp trong thẻ đặc biệt: sử dụng giống với các lớp bình thường. <br>
+            Ví dụ: <span class="highlight"> &lt;mark&gt; CHÚ Ý! &lt;/mark&gt;</span> <br>
+            Một số đối tượng phản hồi với thao tác nhấn (như nút thả xuống hay collapse). Chúng sẽ sử dụng các thuộc
+            tính: <span class="highlight">data-toggle</span> (thao tác thực hiện), <span
+                class="highlight">data-target</span> (đối tượng bị tác động lên) và <span
+                class="highlight">data-dismiss</span> (bỏ qua / đóng). Ví dụ: trong đối tượng nút thả xuống,
+            data-toggle nhận giá trị "dropdown" có nghĩa Bootstrap sẽ thực hiện việc "dropdown" đối với bản thân nút
+            này. Còn collapse có thuộc tính data-target là một thẻ nào đó, có nghĩa thẻ này sẽ bị ẩn đi (với data-togle
+            là "collapse"). Còn trong cảnh báo, một nút sử dụng data-dismiss = "alert" sẽ kích hoạt việc đóng mất đối
+            tượng mà nó nằm bên trong (ở đây là alert).
+        </p>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Container</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Ví dụ sau mô tả cách từng lớp hoạt động:
+            </p>
+            <div style="border: 5px solid cyan;">
+                <p>xin chao cac ban</p>
+            </div>
+            <br>
+            <p>
+                Thẻ div bên trên chưa được áp dụng lớp container.
+            </p>
+            <br>
+            <div class="container" style="border: 5px solid cyan;">
+                <p>xin chao cac ban</p>
+            </div>
+            <br>
+            <p>
+                Thẻ div bên trên được áp dụng lớp <span class="highlight">.container</span>.
+            </p>
+            <br>
+            <div class="container-fluid" style="border: 5px solid cyan;">
+                <p>xin chao cac ban</p>
+            </div>
+            <br>
+            <p>
+                Thẻ div bên trên được áp dụng lớp <span class="highlight">.container-fluid</span>.
+            </p>
+            <br>
+            <p>
+                Như vậy có thể thấy rằng lớp <span class="highlight">.container</span> gói nội dung vào khuôn nhỏ
+                hơn một chút về chiều ngang, cách lề một khoảng không gian. Còn lớp <span
+                    class="highlight">.container-fluid</span> giãn khung rộng hết chiều ngang. Ngoài ra, hai lớp
+                này cũng căn lề nội dung sao cho không chạm vào viền (xem dòng chữ <span class="highlight">xin chao cac
+                    ban</span>).
+            </p>
+
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Hệ thống lưới</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Bootstrap chia chiều rộng của container làm 12 phần. Các thẻ trong đó chỉ có thể đặt kích thước
+                chiều rộng trong khoảng từ 1 đến 12.
+            </p>
+            <br>
+            <div class="row">
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+                <div class="col-1 box"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-2 box"></div>
+                <div class="col-2 box"></div>
+                <div class="col-2 box"></div>
+                <div class="col-2 box"></div>
+                <div class="col-2 box"></div>
+                <div class="col-2 box"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-3 box"></div>
+                <div class="col-3 box"></div>
+                <div class="col-3 box"></div>
+                <div class="col-3 box"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-4 box"></div>
+                <div class="col-4 box"></div>
+                <div class="col-4 box"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-6 box"></div>
+                <div class="col-6 box"></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-12 box"></div>
+            </div>
+            <br>
+            <p>
+                Các dòng trên lần lượt sử dụng các lớp <span class="highlight">.col-1</span>, <span
+                    class="highlight">.col-2</span>, <span class="highlight">.col-3</span>, <span
+                    class="highlight">.col-4</span>, <span class="highlight">.col-6</span>, <span
+                    class="highlight">.col-12</span>. <br>
+                Ngoài ra, Bootstrap còn cung cấp các lớp cho việc ưu hóa cho mỗi kích thước màn hình
+                (responsive attributes), không chỉ cho cột mà còn cho một số kiểu khác. Việc ưu hóa dựa vào độ dài
+                chiều ngang màn hình (đơn vị điểm ảnh). Các từ khóa bao gồm: <span class="highlight">sm</span> (>=
+                576px), <span class="highlight">md</span> (>=
+                768px), <span class="highlight">lg</span> (>= 992px), <span class="highlight">xl</span> (>= 1200px).
+                <br>
+                Cú pháp sử dụng lớp: <span class="highlight">.kiểu_đối_tượng-kiểu_màn_hình-số_phần_12</span>. <br>
+                Ví dụ: <span class="highlight">col-md-3</span> (kiểu cột, khi kích thước màn hình là cỡ trung, thì
+                chiếm 3 phần 12).
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Văn bản có hiệu ứng làm nổi bật</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Các thẻ này có chức năng điều chỉnh màu sắc, kiểu chữ, hay hiệu ứng, làm nổi bật đoạn văn bản chứa
+                bên trong. Có một số thẻ được tái định dạng trong Bootstrap, ví dụ: <span class="highlight">h1 -
+                    h5</span> hay <span class="highlight">dl</span>.
+            </p>
+            <p>
+            <div class="row cols-2">
+                <div class="col-6">
+                    <h1>Heading</h1>
+                </div>
+                <div class="col-6">
+                    <p>Thẻ <span class="highlight">h1</span></p>
+                </div>
+                <div class="col-6">
+                    Small <small>text</small>
+                </div>
+                <div class="col-6">
+                    <p>Thẻ <span class="highlight">small</span></p>
+                </div>
+                <div class="col-6">
+                    <mark>Highlight</mark>
+                </div>
+                <div class="col-6">
+                    <p>Thẻ <span class="highlight">mark</span></p>
+                </div>
+            </div>
+            </p>
+            <p>
+                Ngoài ra còn có một số thẻ khác, như <span class="highlight">abbr</span>, <span
+                    class="highlight">code</span>, vân vân.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Màu</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Bootstrap cung cấp một số màu sắc cơ bản cho việc tô màu cho các thẻ. Các màu sắc này được đặt tên
+                theo "ý nghĩa". Ví dụ: <span class="highlight text-primary">primary</span>, <span
+                    class="highlight text-secondary">secondary</span>, <span
+                    class="highlight text-success">success</span>, <span class="highlight text-danger">danger</span>,
+                <span class="highlight text-warning">warning</span>, <span class="highlight text-info">info</span>,
+                <span class="highlight text-light">light</span>, <span class="highlight text-dark">dark</span>.
+            </p>
+            <br>
+            <p>
+                Cách sử dụng: đối với văn bản, thêm từ khóa <span class="highlight">text-tên_màu</span> hoặc
+                <span class="highlight">bg-tên_màu</span> vào class của thẻ. Ví dụ: <span
+                    class="highlight">bg-danger</span> để tô màu nền <span class="bg-danger text-white">đỏ</span>.
+            </p>
+            <br>
+            <p>
+                Một số thẻ có cấu cấu trúc như bảng hay alert cũng có các từ khóa tương ứng để thiết lập màu sắc đối với
+                cả nền lẫn văn bản.
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Bảng</h1>
+        </div>
+        <div class="lightgreyclass">
+            <div>
+                <p>
+                    Cấu trúc một bảng trong Bootstrap so với bên HTML có thêm thẻ <span class="highlight">thead</span>
+                    và <span class="highlight">tbody</span> bao các thẻ <span class="highlight">tr</span>:
+                </p>
+                <br>
+            </div>
+            <div>
+
+                <pre>
+&lt;table class="table"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt; Cột 1&lt;/th&gt;
+            ...
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt; cột 1 hàng 2 &lt;/td&gt;
+            ...
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                </pre>
+
+            </div>
+            <br>
+            <div>
+                <p>
+                    Cấu trúc bảng bao gồm các từ khóa căn chỉnh sau:
+                </p>
+            </div>
+            <br>
+            <div style="display: flex;">
+                <div class="exampleBox">
+                    <div class="type1">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Cột 1</th>
+                                    <th>Cột 2</th>
+                                    <th>Cột 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cột 1 hàng 2</td>
+                                    <td>cột 2 hàng 2</td>
+                                    <td>cột 3 hàng 2</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 3</td>
+                                    <td>cột 2 hàng 3</td>
+                                    <td>cột 3 hàng 3</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 4</td>
+                                    <td>cột 2 hàng 4</td>
+                                    <td>cột 3 hàng 4</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="highlight">(gốc)</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="exampleBox">
+                    <div class="type1">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>Cột 1</th>
+                                    <th>Cột 2</th>
+                                    <th>Cột 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cột 1 hàng 2</td>
+                                    <td>cột 2 hàng 2</td>
+                                    <td>cột 3 hàng 2</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 3</td>
+                                    <td>cột 2 hàng 3</td>
+                                    <td>cột 3 hàng 3</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 4</td>
+                                    <td>cột 2 hàng 4</td>
+                                    <td>cột 3 hàng 4</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="highlight">table-striped</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="exampleBox">
+                    <div class="type1">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Cột 1</th>
+                                    <th>Cột 2</th>
+                                    <th>Cột 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cột 1 hàng 2</td>
+                                    <td>cột 2 hàng 2</td>
+                                    <td>cột 3 hàng 2</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 3</td>
+                                    <td>cột 2 hàng 3</td>
+                                    <td>cột 3 hàng 3</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 4</td>
+                                    <td>cột 2 hàng 4</td>
+                                    <td>cột 3 hàng 4</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="highlight">table-bordered</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div class="exampleBox">
+                    <div class="type1">
+                        <table class="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Cột 1</th>
+                                    <th>Cột 2</th>
+                                    <th>Cột 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cột 1 hàng 2</td>
+                                    <td>cột 2 hàng 2</td>
+                                    <td>cột 3 hàng 2</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 3</td>
+                                    <td>cột 2 hàng 3</td>
+                                    <td>cột 3 hàng 3</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 4</td>
+                                    <td>cột 2 hàng 4</td>
+                                    <td>cột 3 hàng 4</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="highlight">table-hover</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="exampleBox">
+                    <div class="type1">
+                        <table class="table table-borderless">
+                            <thead>
+                                <tr>
+                                    <th>Cột 1</th>
+                                    <th>Cột 2</th>
+                                    <th>Cột 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cột 1 hàng 2</td>
+                                    <td>cột 2 hàng 2</td>
+                                    <td>cột 3 hàng 2</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 3</td>
+                                    <td>cột 2 hàng 3</td>
+                                    <td>cột 3 hàng 3</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 4</td>
+                                    <td>cột 2 hàng 4</td>
+                                    <td>cột 3 hàng 4</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="highlight">table-borderless</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="exampleBox">
+                    <div class="type1">
+                        <table class="table table-dark">
+                            <thead>
+                                <tr>
+                                    <th>Cột 1</th>
+                                    <th>Cột 2</th>
+                                    <th>Cột 3</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>cột 1 hàng 2</td>
+                                    <td>cột 2 hàng 2</td>
+                                    <td>cột 3 hàng 2</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 3</td>
+                                    <td>cột 2 hàng 3</td>
+                                    <td>cột 3 hàng 3</td>
+                                </tr>
+                                <tr>
+                                    <td>cột 1 hàng 4</td>
+                                    <td>cột 2 hàng 4</td>
+                                    <td>cột 3 hàng 4</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <p>
+                            <span class="highlight">table-dark</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Ngoài ra còn có thể chỉ định màu sắc cho từng dòng hay từng ô với tên lớp dạng <span
+                        class="highlight">.table-màu</span>, chẳng hạn:
+                </p>
+                <div>
+                    <table class="table table-primary">
+                        <thead>
+                            <tr>
+                                <th>Cột 1</th>
+                                <th>Cột 2</th>
+                                <th>Cột 3</th>
+                            </tr>
+                        </thead>
+                        <tbody class="table-info">
+                            <tr>
+                                <td>cột 1 hàng 2</td>
+                                <td>cột 2 hàng 2</td>
+                                <td>cột 3 hàng 2</td>
+                            </tr>
+                            <tr class="table-success">
+                                <td>cột 1 hàng 3</td>
+                                <td>cột 2 hàng 3</td>
+                                <td>cột 3 hàng 3</td>
+                            </tr>
+                            <tr>
+                                <td class="table-danger">cột 1 hàng 4</td>
+                                <td>cột 2 hàng 4</td>
+                                <td>cột 3 hàng 4</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <p>
+            <h1>Cảnh báo</h1>
+            </p>
+        </div>
+        <div class="lightgreyclass">
+            <div class="alert alert-success">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione.
+            </div>
+            <div>
+                <p>
+                    Trên đây là một cảnh báo với từ khóa quy định màu xanh lá <span
+                        class="highlight">(alert-success)</span>. Tuy nhiên, một cảnh báo cũng cần có một nút để ẩn đi.
+                    Ngoài từ khóa <span class="highlight">alert-dismissible</span>, trong lớp đó còn kèm theo một nút để
+                    kích hoạt việc ẩn cảnh báo: <br>
+
+                <pre>
+&lt;div class="alert alert-success"&gt;
+    &lt;button type="button" class="close" data-dismiss="alert"&gt; <span title="dấu nhân">&amp;times;</span> &lt;/button&gt;
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione.
+&lt;/div&gt;
+                    </pre>
+                Kết quả như sau:
+                </p>
+            </div>
+            <div class="alert alert-success">
+                <button type="button" class="close" data-dismiss="alert"> &times; </button>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione.
+            </div>
+            <br>
+            <div>
+                <p>
+                    Để thêm hiệu ứng làm mờ khi cảnh báo ẩn đi, đặt <span class="highlight">.fade</span> và
+                    <span class="highlight">.show</span> làm lớp cho alert (.fade thêm hiệu ứng làm mờ và cũng ẩn đối
+                    tượng đi, còn .show để giữ đối tượng vẫn hiển thị):
+                </p>
+                <pre>
+&lt;div class="alert alert-success fade show"&gt;
+    &lt;button type="button" class="close" data-dismiss="alert"&gt; <span title="dấu nhân">&amp;times;</span> &lt;/button&gt;
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione.
+&lt;/div&gt;
+                </pre>
+                <p>
+                    Kết quả như sau:
+                </p>
+            </div>
+            <div>
+                <div class="alert alert-success fade show">
+                    <button type="button" class="close" data-dismiss="alert"> &times; </button>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, ratione.
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Nút</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Có tổng cộng 3 cách để tạo nút trong Bootstrap ("btn-success" và "ABC" là tùy ý): <br>
+            <ul>
+                <li>Cách được khuyến khích đầu tiên: <br>
+                    <pre>
+&lt;button type="button" class="btn btn-primary"&gt; ABC &lt;/button&gt;
+                </pre>
+                </li>
+                <li>
+                    Cũng có thể sử dụng thẻ input như HTML:
+                    <pre>
+&lt;input type="button" class="btn btn-primary" value="ABC"&gt;
+                    </pre>
+                </li>
+                <li>
+                    Tận dụng thẻ neo (anchor) để tạo một nút chứa liên kết:
+                    <pre>
+&lt;a type="button" class="btn btn-primary" href="#"&gt; ABC &lt;/a&gt;
+                    </pre>
+                </li>
+            </ul>
+            Sau đây là kết quả:
+            </p>
+            <div>
+                <button type="button" class="btn btn-primary"> ABC </button>
+                <input type="button" class="btn btn-primary" value="ABC">
+                <a type="button" class="btn btn-primary" href="#"> ABC </a>
+            </div>
+            <br>
+            <p>
+                Có thể thấy khi di chuột vào ô thứ 3, phía dưới cửa sổ trình duyệt có hiện liên kết mà nút chứa. Đây là
+                sự khác nhau cơ bản với 2 nút đầu không sử dụng thẻ neo. <br>
+                Một số tên lớp cho kiểu nút:
+            </p>
+            <div>
+                <p>
+                    Màu nút: <span class="highlight">.btn-màu</span>
+                </p>
+                <pre>
+&lt;button type="button" class="btn btn-primary"&gt;Primary&lt;/button&gt;
+                </pre>
+                <button type="button" class="btn btn-primary">Primary</button>
+            </div>
+            <br>
+
+            <div>
+                <p>
+                    Màu viền: <span class="highlight">.btn-outline-màu</span>
+                </p>
+                <pre>
+&lt;button type="button" class="btn btn-outline-primary"&gt;Primary&lt;/button&gt;
+                </pre>
+                <button type="button" class="btn btn-outline-primary">Primary</button>
+            </div>
+            <br>
+
+            <div>
+                <p>
+                    Cỡ nút: <span class="highlight">.btn-lg</span> hoặc <span class="highlight">.btn-sm</span>
+                </p>
+                <pre>
+&lt;button type="button" class="btn btn-primary btn-lg"&gt;Large&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary"&gt;Default&lt;/button&gt;
+&lt;button type="button" class="btn btn-primary btn-sm"&gt;Small&lt;/button&gt;
+                </pre>
+                <button type="button" class="btn btn-primary btn-lg">Large</button>
+                <button type="button" class="btn btn-primary">Default</button>
+                <button type="button" class="btn btn-primary btn-sm">Small</button>
+            </div>
+            <br>
+
+            <div>
+                <p>
+                    Nút trạng thái kích hoạt / vô hiệu hóa <br>
+                    Nút ở trạng thái kích hoạt khi được bấm vào. Nút ở trạng thái vô hiệu hóa khi không còn nội dung
+                    được nó
+                    chỉ đến và không thể bấm được. Lớp <span class="highlight">.active</span> giúp làm đậm màu hơn,
+                    <span class="highlight">.disabled</span> giúp làm nhạt màu hơn cho nút. Tuy nhiên đối với những nút
+                    được đặt thuộc tính <span class="highlight">disabled</span>, Bootstrap sẽ tự đặt màu nhạt hơn. Vì
+                    thẻ
+                    neo <span class="highlight">&lt;a&gt;</span> không hỗ trợ thuộc tính <span
+                        class="highlight">disabled</span> nên cần sử dụng lớp <span class="highlight">.disabled</span>
+                    thay thế.
+                </p>
+                <pre>
+&lt;button type="button" class="btn btn-primary active"&gt;Active Primary&lt;/button&gt;
+&lt;input type="button" class="btn btn-primary active" value="Active Primary"&gt;
+&lt;a href="#" class="btn btn-primary active"&gt;Active Link&lt;/a&gt;
+&lt;button type="button" class="btn btn-primary" disabled&gt;Disabled Primary&lt;/button&gt;
+&lt;input type="button" class="btn btn-primary" disabled value="Disabled Primary&gt;
+&lt;a href="#" class="btn btn-primary disabled"&gt;Disabled Link&lt;/a&gt;
+                </pre>
+                <button type="button" class="btn btn-primary active">Active Primary</button>
+                <input type="button" class="btn btn-primary active" value="Active Primary">
+                <a href="#" class="btn btn-primary active">Active Link</a>
+
+
+                <button type="button" class="btn btn-primary" disabled>Disabled Primary</button>
+                <input type="button" class="btn btn-primary" disabled value="Disabled Primary">
+                <a href="#" class="btn btn-primary disabled">Disabled Link</a>
+            </div>
+            <br>
+
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Card</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Card (tấm thẻ) là một container được thiết kế với viền bo nhẹ, bên trong bố trí phần đầu, phần nội
+                dung,
+                phần chân. Không bắt buộc những thành phần này đều xuất hiện. Dưới đây là cấu trúc đầy đủ của một card:
+            </p>
+            <pre>
+&lt;div class="card"&gt;
+    &lt;img src="..." alt="..." class="card-img-top"&gt;
+    &lt;div class="card-header"&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        ...
+    &lt;/div&gt;
+    &lt;img src="..." alt="..." class="card-img-bottom"&gt;
+&lt;/div&gt;
+            </pre>
+            <p>
+                Cấu trúc bố trí trong card và những chi tiết liên quan như sau:
+            </p>
+            <div class="card-group">
+                <div class="card">
+                    <img src="#" alt="img.card-img-top" class="card-img-top">
+                    <div class="card-header">
+                        <p><span class="highlight">.card-header</span></p>
+                    </div>
+                    <div class="card-body">
+                        <p><span class="highlight">.card-body</span></p>
+                        <h4 class="card-title">h4.card-title</h4>
+                        <p class="card-text">p.card-text</p>
+                        <a href="#" class="card-link">a.card-link</a>
+                        <a href="#" class="card-link stretched-link">a.card-link .stretched-link</a>
+                    </div>
+                    <div class="card-footer">
+                        <p><span class="highlight">.card-footer</span></p>
+                    </div>
+                    <img src="#" alt="img.card-img-bottom" class="card-img-bottom">
+                </div>
+
+                <div class="card">
+                    <img src="samples/bliss-wallpaper.jpg" alt="Bliss.bmp" class="card-img-top" height="auto">
+                    <div class="card-body card-img-overlay">
+                        <p><span class="highlight">.card-body .card-img-overlay</span></p>
+                        <!-- <br> -->
+                        <div class="card-columns">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-columns &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-columns &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-columns &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-columns &gt; .card</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <br> -->
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-deck &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-deck &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-deck &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-deck &gt; .card</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <br> -->
+                        <div class="card-group">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-group &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-group &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-group &gt; .card</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-text">.card-group &gt; .card</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <p>
+                Có thể thấy rằng 3 thẻ giữa được căn chỉnh cách lề, giúp văn
+                bản trông đẹp mắt hơn. 2 thẻ nằm trên cùng và dưới cùng thực chất là các thẻ ảnh (img), sát lề. Trên
+                thực tế một trong hai thẻ được sử dụng hơn là cả hai. <br>
+                Những đối tượng cần chú ý tiếp theo là tiêu đề, văn bản và liên kết. Những đối tượng này được sử dụng
+                với các lớp tương ứng <span class="highlight">card-title</span>, <span
+                    class="highlight">card-text</span> và <span class="highlight">card-link</span>. Những lớp này căn
+                chỉnh sao cho cách hiển thị phù hợp với một card hơn. <br>
+                Lớp <span class="highlight">stretched-link</span> bao quát toàn bộ không gian của thẻ (Đè lên không gian
+                của những liên kết khác nếu có). Khi di chuột hay bấm vào một vị trí bất kì, đường liên kết mà từ khóa
+                chỉ định sẽ thể hiện giống với khi thao tác chuột trên văn bản liên kết đó (tóm lại là đổi màu). <br>
+
+                Có một lớp nữa là <span class="highlight">.card-img-overlay</span>. Nếu một trong các thẻ giữa dùng lớp
+                này, (những) ảnh nằm ở đầu / cuối được đặt làm nền, nội dung được đẩy lên bao phủ toàn bộ không gian của
+                thẻ. Lưu ý kích thước của anh là cố định, nên nội dung sẽ tràn ra ngoài nếu quá dài.<br>
+
+                Ngoài lớp .card, 3 lớp <span class="highlight">.card-columns</span>, <span
+                    class="highlight">.card-deck</span> và <span class="highlight">.card-group</span> có tác dụng gộp
+                nhóm các thẻ theo kiểu khác nhau: <br>
+            <ul>
+                <li>
+                    <span class="highlight">.card-columns</span>: gom nhóm các card theo từng nhóm cột. Với 4 đối tượng
+                    trở xuống, nó gom thành 2 cột, ngược lại gom thành 3 cột.
+                </li>
+                <li>
+                    <span class="highlight">.card-deck</span>: đặt các card lên cùng một dòng, với khoảng cách giữa các
+                    đối tượng, tương tự với <span class="highlight">.card-columns</span>.
+                </li>
+                <li>
+                    <span class="highlight">.card-group</span>: cũng đặt các đối tượng lên cùng một dòng giống <span
+                        class="highlight">.card-deck</span> nhưng không có khoảng cách giữa các đối tượng. Hai đối tượng
+                    hai mút được bo góc nhẹ, thay vì toàn bộ.
+                </li>
+            </ul>
+            <p>
+            <div class="mark">
+                Nếu các đối tượng trong lớp .card-group có khoảng cách với nhau, điều đó có nghĩa chúng đã được kế
+                thừa thuộc tính từ lớp cha, có thể ở đây các lớp .card-columns hay .card-deck đã áp dụng các thuộc
+                tính căn chỉnh khoảng cách xung quanh (margin).
+            </div>
+            </p>
+            </p>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Nút thả xuống</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Nút thả xuống (dropdown button) là nút bấm có chức năng hiển thị các lựa chọn (thả xuống) mà nó bao gồm
+                khi
+                nhấn chuột vào. Cấu trúc của nó có phần giống với cảnh báo (alert):
+            </p>
+            <pre>
+&lt;div class="dropdown"&gt;
+    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"&gt; ... &lt;/button&gt;
+    &lt;div class="dropdown-menu"&gt;
+        &lt;a class="dropdown-item" href="#"&gt;.dropdown-item&lt;/a&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <div>
+                <p>
+                    Cấu trúc của môt nút thả xuống như sau:
+                </p>
+            </div>
+            <div>
+                <div class="dropdown">
+                    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                        button.btn type="button" data-toggle="dropdown"
+                    </button>
+                    <div class="dropdown-menu">
+                        <div class="dropdown-header">.dropdown-header</div>
+                        <a class="dropdown-item" href="#">.dropdown-item</a>
+                        <a class="dropdown-item" href="#">.dropdown-item</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">.dropdown-divider &uparrow;</a>
+                        <a href="#" class="dropdown-item active">.dropdown-item .active</a>
+                        <a href="#" class="dropdown-item disabled">.dropdown-item .disabled</a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p>
+                    Trước hết cần lưu ý lớp <span class="highlight">.dropdown-toggle</span> hiển thị dấu tam giác chỉ
+                    xuống phía cuối văn bản trong nút. <br>
+                    Những phần tử lựa chọn sử dụng lớp <span class="highlight">.dropdown-item</span>, lớp <span
+                        class="highlight">.dropdown-header</span> hiển thị một dòng chữ nhỏ mờ để giải thích các lựa
+                    chọn, <span class="highlight">.dropdown-divider</span> tạo ra một đường thẳng ngăn đôi bảng, có tác
+                    dụng chia nhóm các lựa chọn. <br>
+                    Các lựa chọn cũng tương tự với nút, chúng cũng có thể sử dụng lớp <span
+                        class="highlight">.active</span> hay <span class="highlight">.disabled</span> để thể hiện trạng
+                    thái được chọn hay bị vô hiệu hoá.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Collapse</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Một nút bấm (thường ở thanh điều hướng) thả ra một đoạn văn bản / lựa chọn bên cạnh hoặc bên dưới nó,
+                thì
+                được gọi là collapse. Để tạo một collapse, cần có một nút bấm và một đối tượng, nút bấm tác dụng lên đối
+                tượng:
+            </p>
+            <pre>
+&lt;button type="button" data-toggle="collapse" data-target="#doituong" class="btn btn-primary"&gt;Collapse&lt;/button&gt;
+&lt;div class="collapse" id="doituong"&gt;Doi tuong bi tac dong&lt;/div&gt;
+            </pre>
+            <div>
+                <button type="button" data-toggle="collapse" data-target="#anobject" class="btn btn-primary">button
+                    type="button" data-toggle="collapse"
+                    data-target="#anobject"</button>
+                <div class="collapse" id="anobject">.collapse id="anobject"</div>
+            </div>
+            <div>
+                <p>
+                    <span class="highlight">data-toggle</span> chỉ định rằng nút bấm thực hiện việc collapse, trong khi
+                    <span class="highlight">data-target</span> chỉ định một đối tượng để tác động lên. Đối tượng đó cần
+                    sử dụng lớp <span class="highlight">.collapse</span> để khởi tạo trạng thái ban đầu là đã bị ẩn đi,
+                    và cũng vì thao tác được thực hiện đầu tiên khi nút bấm được tác dụng là mở phần văn bản / lựa chọn
+                    bị ẩn.
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Menu điều hướng</h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Menu điều hướng thường xuất hiện ở giữa nội dung, thay vì ở một khu vực cố định như thanh điều hướng. Nó
+                có tác dụng hiển thị và ẩn đi những trang nội dung được đặt tại cùng vị trí. Một menu điều hướng thường
+                đi cùng phần nội dung mà nó tác dụng lên:
+            </p>
+            <div>
+                <pre>
+&lt;ul class="nav"&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" data-toggle="tab" href="#home"&gt;Nav 1&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" data-toggle="tab" href="#menu1"&gt;Nav 2&lt;/a&gt;
+    &lt;/li&gt;
+    ...
+&lt;/ul&gt;
+&lt;div class="tab-content"&gt;
+    &lt;div class="tab-pane container active" id="home"&gt;nội dung 1&lt;/div&gt;
+    &lt;div class="tab-pane container" id="menu1"&gt;nội dung 2&lt;/div&gt;
+    ...
+&lt;/div>
+                </pre>
+            </div>
+            <div>
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#link1" data-toggle="tab">.nav > .nav-item > .nav-link
+                            .active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#link2" data-toggle="tab">.nav > .nav-item > .nav-link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#link3" data-toggle="tab">.nav > .nav-item > .nav-link
+                            .disabled</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="container tab-pane active" id="link1">.tab-content > .container .tab-pane .active</div>
+                    <div class="container tab-pane" id="link2">.tab-content > .container .tab-pane</div>
+                    <div class="container tab-pane" id="link3">.tab-content > .container .tab-pane</div>
+                </div>
+
+            </div>
+            <div>
+                <p>
+                    Lớp <span class="highlight">.active</span> khởi tạo trạng thái bắt đầu của phần tử mà nó áp dụng
+                    (nút và nội dung được hiển thị ban đầu). Ngược lại, lớp <span class="highlight">.disabled</span> vô
+                    hiệu hóa phần tử khỏi phản hồi của menu điều hướng. <span class="highlight">.nav-link</span> chỉ
+                    định một nút bấm bên trong menu điều hướng, còn <span class="highlight">.tab-pane</span> chỉ định
+                    phần nội dung mà menu tác dụng lên, và các phần nội dung này được đặt trong lớp <span
+                        class="highlight">tab-content</span>. <span class="highlight">data-toggle="tab" hay
+                        "pill"</span> cho Bootstrap biết những nút bấm này thực hiện chức năng trong menu điều hướng
+                    (không rõ hai giá trị này có tác dụng khác nhau hay không). <br>
+                    Ngoài ra, menu điều hướng còn được cung cấp với 2 dạng trực quan hơn: (.nav) <span
+                        class="highlight">.nav-tabs</span> và (.nav) <span class="highlight">.nav-pills</span>:
+                </p>
+            </div>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#link1ex1" data-toggle="tab">.nav > .nav-item > .nav-link
+                            .active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#link2ex1" data-toggle="tab">.nav > .nav-item > .nav-link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#link3ex1" data-toggle="tab">.nav > .nav-item > .nav-link
+                            .disabled</a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="container tab-pane active" id="link1ex1">.tab-content > .container .tab-pane .active
+                    </div>
+                    <div class="container tab-pane" id="link2ex1">.tab-content > .container .tab-pane</div>
+                    <div class="container tab-pane" id="link3ex1">.tab-content > .container .tab-pane</div>
+                </div>
+                <br>
+                <ul class="nav nav-pills">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#link1ex2" data-toggle="tab">.nav > .nav-item > .nav-link
+                            .active</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#link2ex2" data-toggle="tab">.nav > .nav-item > .nav-link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#link3ex2" data-toggle="tab">.nav > .nav-item > .nav-link
+                            .disabled</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="container tab-pane active" id="link1ex2">.tab-content > .container .tab-pane .active
+                    </div>
+                    <div class="container tab-pane" id="link2ex2">.tab-content > .container .tab-pane</div>
+                    <div class="container tab-pane" id="link3ex2">.tab-content > .container .tab-pane</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>
+                Thanh điều hướng
+            </h1>
+        </div>
+        <div class="lightgreyclass">
+            <p>
+                Thanh điều hướng thường được đặt cố định tại một vị trí trên trang, có tác dụng chính là di chuyển giữa
+                các
+                trang khác nhau. Cấu trúc cơ bản như sau:
+            </p>
+            <pre>
+&lt;nav class="navbar navbar-expand-lg bg-light navbar-light">
+    &lt;a class="navbar-brand" href="#"&gt;
+        &lt;img src="..." alt="Logo" style="width:40px;"&gt;
+    &lt;/a&gt;
+    &lt;button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"&gt;
+        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;div class="collapse navbar-collapse" id="collapsibleNavbar"&gt;
+        &lt;ul class="navbar-nav"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a&gt; class="nav-link" href="#"&gt;Link 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Link 2&lt;/a&gt;
+            &lt;/li&gt;
+            ...
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+            </pre>
+            <div>
+                <nav class="navbar navbar-expand-lg bg-light navbar-light">
+                    <p>
+                        nav.navbar.navbar-expand-lg
+                    </p>
+                    <a class="navbar-brand bg-primary" href="#">
+                        <p>
+                            a.navbar-brand > img
+                        </p>
+                        <img src="samples/Windows_Logo_(1992-2001).svg.png" alt="Windows Logo" style="width:40px;">
+                    </a>
+                    <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                        data-target="#collapsibleNavbar">
+                        <p>
+                            button.navbar-toggler
+                        </p>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-secondary" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ul.navbar-nav > li.nav-item > a.nav-link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">ul.navbar-nav > li.nav-item > a.nav-link</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <br>
+            <p>
+                Thanh điều hướng là một thẻ <span class="highlight">nav</span> với lớp <span
+                    class="highlight">.navbar</span>. Lớp <span class="highlight">.navbar-expand-cỡ</span> xác định kích
+                thước màn hình tối thiểu mà nó sẽ kích hoạt việc mở rộng toàn bộ thanh điều hướng (ở đây là từ kích
+                thước large trở lên), nếu không sử dụng thì mặc định thanh điều hướng sẽ hiển thị một nút collapse ẩn
+                nội dung bên dưới của thanh. <br>
+                Bên trong thẻ nav chứa thẻ <span class="highlight">a</span> lớp <span
+                    class="highlight">.navbar-brand</span> xác định biểu tượng của một trang web. Nó bao gồm thẻ img, và
+                còn có thể chứa các thẻ khác. Thẻ nav còn chứa một collapse, với nút sử dụng lớp <span
+                    class="highlight">.navbar-toggler</span>, và thẻ div chứa nội dung sử dụng lớp <span
+                    class="highlight">.navbar-collapse</span>. Thẻ unordered list (ul) cần sử dụng lớp <span
+                    class="highlight">.navbar-nav</span> để màu chữ phù hợp với thanh điều hướng, trong khi các đối
+                tượng bên trong cũng dùng <span class="highlight">.nav-item</span> và <span
+                    class="highlight">.nav-link</span>.
+            </p>
+        </div>
+
+    </div>
+    <br>
+    <br>
+    <div>
+        <div>
+            <h1>Modal</h1>
+        </div>
+        <div class="lightgreyclass">
+            <div>
+
+            </div>
+            <pre>
+&lt;button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal"&gt;
+    Open modal
+&lt;/button&gt;
+
+&lt;div class="modal" id="myModal"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+
+            
+            &lt;div class="modal-header"&gt;
+                &lt;h4 class="modal-title">Modal Heading&lt;/h4&gt;
+                &lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+            &lt;/div&gt;
+
+            
+            &lt;div class="modal-body"&gt;
+                Modal body.
+            &lt;/div&gt;
+
+            
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-danger" data-dismiss="modal"&gt;Close&lt;/button&gt;
+            &lt;/div&gt;
+
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+            </pre>
+            <div>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                    button.btn
+                </button>
+
+                <div class="modal" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <p>
+                                (.modal-dialog >) .modal-content
+                            </p>
+                            
+                            <div class="modal-header">
+                                <h4 class="modal-title">.modal-header</h4>
+                                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            </div>
+
+                            
+                            <div class="modal-body">
+                                .modal-body
+                            </div>
+
+                            
+                            <div class="modal-footer">
+                                .modal-footer
+                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+</div>

@@ -1,0 +1,77 @@
+div.type1 {
+    background: aqua;
+    border: 10px dotted blue;
+    /* border-color: brown; */
+    /* min-width: 50px;
+    min-height: 50px; */
+    /* margin: 50px; */
+    /* display: inline; */
+}
+
+div.type2 {
+    background: red;
+    /* border: 10px dotted brown; */
+    /* border-color: brown; */
+    /* min-width: 50px;
+    min-height: 50px; */
+    width: 50px;
+    height: 50px;
+    margin: 50px;
+    /* display: inline; */
+}
+
+div.type3 {
+    background: green;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+#responsive::first-line {
+    font-variant: small-caps;
+}
+
+#responsive::first-letter {
+    font-size: 150%;
+}
+
+#responsive::selection {
+    color: blue;
+    background-color: violet;
+}
+
+#responsive3 {
+    display: none;
+}
+
+#responsive2:active {
+    background-color: aqua;
+}
+
+#responsive2:hover #responsive3 {
+    display: block;
+}
+
+.transformExample {
+    transition: 1s;
+}
+
+.transformExample1:hover {
+    transform: translate(20px, 20px);
+}
+
+.transformExample2:hover {
+    transform: rotate(45deg);
+}
+
+.transformExample3:hover {
+    transform: scale(1.5, 0.8);
+}
+
+.transformExample4:hover {
+    transform: skew(20deg, 10deg);
+}
+
+.transformExample5:hover {
+    transform: matrix(1, -0.3, 0, 1, 0, 0);
+}

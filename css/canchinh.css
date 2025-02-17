@@ -1,0 +1,155 @@
+body {
+    margin: 0px;
+    background-image: url("samples/Windows_Energy_Bliss.jpg");
+    background-size: 100%;
+    background-position: center;
+    
+}
+.dau {
+    font-size: 20px;
+    /* background-color: blueviolet; */
+    color: aqua;
+    align-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-weight: bolder; */
+    text-align: center;
+    text-shadow: 0px 0px 10px black;
+    /* padding: 10px; */
+    height: 100px;
+    /* padding: 30px; */
+}
+
+.than {
+    display: flex;
+    background-color: lightblue;
+    height: calc(100vh - 100px);
+    /* height: auto; */
+    width: 100%;
+    overflow: auto;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+}
+
+/* .than::after {
+    width: auto;
+} */
+
+.bangben {
+    background-color: darkgrey;
+    /* font-size: 12px; */
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    width: 250px;
+    /* position: inherit; */
+    border-radius: 30px;
+    padding: 5px;
+    /* overflow: auto; */
+    overflow-y: auto;
+    overflow-x: hidden;
+    /* word-wrap: break-word; */
+    /* white-space: nowrap; */
+}
+
+.bangben > h3 {
+    color: tomato;
+    /* width: 200px; */
+    /* margin: 10px; */
+}
+
+.bangben > ul {
+    padding: 0px;
+    list-style-type: none;
+    /* width: 90%; */
+    /* width: calc(50%); */
+}
+
+.bangben > ul > li {
+    margin-top: 10px;
+}
+
+.chinh {
+    /* width: fit-content; */
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    overflow: auto;
+    width: calc(100% - 250px);
+    /* border-top-right-radius: 500px; */
+}
+
+.noidung {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    padding: 10px;
+    display: flex;
+    min-height: calc(100vh - 210px);
+    flex-direction: column;
+    /* height: calc(100% - 120px); */
+    /* height: calc(100vh - 220px); */
+    /* width: 80%; */
+    /* overflow: auto; */
+}
+
+.chan {
+    background-color: black;
+    padding: 5px;
+    text-align: right;
+    color: yellow;
+    font-size: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 80px;
+}
+
+.lightgreyclass {
+    background-color: lightgrey;
+    border-radius: 30px;
+    overflow: visible;
+    padding: 20px;
+    /* width: auto; */
+}
+
+span.highlight {
+    font-weight: bold;
+    font-size: 150%;
+    color: blue;
+    /* margin: 20px; */
+}
+
+@media (max-width: 600px) {
+    .than {
+        display: block;
+        /* overflow: auto; */
+        height: calc(100vh - 100px);
+        width: auto;
+        /* word-wrap: break-word; */
+    }
+    .bangben {
+        height: 100px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        width: auto;
+    }
+    .chinh {
+        overflow: visible;
+        height:  calc(100vh - 200px);
+        width: auto;
+    }
+    .noidung {
+        height: fit-content;
+        /* overflow: auto; */
+        width: auto;
+    }
+}
+
+div.exampleBox {
+    display: grid;
+    grid-template-rows: 400px 100px;
+    text-align: center;
+    width: 100%;
+}
+
+pre {
+    background-color: darkgrey;
+    border: 1px solid grey;
+    max-height: 500px;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Những lưu ý rút ra từ việc học HTML CSS Bootstrap</title>
+        <link rel="stylesheet" href="css/canchinh.css">
+        <link rel="icon" href="samples/Windows_Logo_(1992-2001).svg.png">
+</head>
+
+<body>
+        <div class="dau" id="dau"></div>
+        <script>
+                fetch('dau.html').then(response => response.text())
+                        .then(data => document.getElementById('dau').innerHTML = data);
+        </script>
+        <div class="than">
+                <div class="bangben" id="bangben"></div>
+                <script>
+                        fetch('bangben.html').then(response => response.text())
+                                .then(data => document.getElementById('bangben').innerHTML = data);
+                </script>
+                <div class="chinh">
+                        <div class="noidung" id="noidung"></div>
+                        <script>
+                                fetch('kienthuc_content.html').then(response => response.text())
+                                        .then(data => document.getElementById('noidung').innerHTML = data);
+                        </script>
+
+
+                        <div class="chan" id="chan"></div>
+                        <script>
+                                fetch('chan.html').then(response => response.text())
+                                        .then(data => document.getElementById('chan').innerHTML = data);
+                        </script>
+
+                </div>
+        </div>
+</body>
+
+</html>
